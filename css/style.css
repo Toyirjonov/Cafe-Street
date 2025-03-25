@@ -1,0 +1,196 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v22-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v22-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v22-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 4%;
+  background-color: #f6ebda;
+}
+
+.container {
+  width: 100%;
+  max-width: 1221px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.header-container {
+}
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 140px;
+}
+.site-logo {
+}
+.sitenav {
+}
+
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.sitenav-item {
+}
+
+.sitenav-link {
+  color: #000;
+  transition: 0.3s;
+}
+
+.sitenav-link:hover {
+  color: #ff902b;
+}
+
+.header-nav-container-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.global-search {
+  box-shadow: 6px 2px 24px 0px #00000021;
+  border-radius: 35px;
+}
+.global-search-input {
+  padding: 10px 12px 10px 35px;
+  background-image: url("../image/search.svg");
+  background-repeat: no-repeat;
+  background-size: 19px 19px;
+  background-position: center left 14px;
+  border: 0;
+  border-radius: 35px;
+  width: 250px;
+}
+
+.global-search-input:focus {
+  outline: none;
+}
+
+.header-nav-container-actions-image {
+}
+.header-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 167px;
+}
+
+.content-hero {
+  width: 489px;
+  height: 300px;
+}
+
+.header-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.header-title span {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ff902b;
+}
+
+.header-subtitle {
+  font-weight: 400;
+  font-style: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #7e7d7a;
+  width: 393px;
+  height: 54px;
+  margin-bottom: 32px;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.order-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600px;
+  font-size: 14px;
+  width: 170px;
+  height: 46px;
+  padding: 12px 32px;
+  border: 0;
+  border-radius: 33px;
+  background-color: #2f2105;
+  color: #ffffff;
+}
+
+.menu-btn {
+  font-weight: 700;
+  font-style: 12px;
+  color: #f4ae26;
+}
