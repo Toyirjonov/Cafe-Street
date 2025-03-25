@@ -49,12 +49,13 @@ a {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1;
+  line-height: 100%;
   letter-spacing: 4%;
-  background-color: #f6ebda;
+  background-color: #ffffff;
+  position: relative;
 }
 
 .container {
@@ -66,21 +67,43 @@ body {
   margin-right: auto;
 }
 
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+/* HEADER START */
+
 .header {
-  margin-top: 36px;
-  margin-bottom: 36px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #f6ebda;
+  height: 950px;
+}
+
+.img-hero-top {
+  width: 599px;
+  height: 394px;
+  position: absolute;
+  background-image: url("../image/bg_img_hero.svg");
+  background-position: top right;
+  background-size: cover;
+  top: 0;
+  right: 0;
 }
 
 .header-container {
 }
+
 .header-nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 140px;
 }
+
 .site-logo {
 }
+
 .sitenav {
 }
 
@@ -94,8 +117,7 @@ body {
 }
 
 .sitenav-link {
-  color: #000;
-  transition: 0.3s;
+  color: #000000;
 }
 
 .sitenav-link:hover {
@@ -106,50 +128,59 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
+  position: relative;
 }
+
 .global-search {
   box-shadow: 6px 2px 24px 0px #00000021;
   border-radius: 35px;
 }
+
 .global-search-input {
-  padding: 10px 12px 10px 35px;
-  background-image: url("../image/search.svg");
+  padding: 10px 12px 10px 40px;
+  background-image: url("../image/search-icon.svg");
   background-repeat: no-repeat;
   background-size: 19px 19px;
   background-position: center left 14px;
-  border: 0;
   border-radius: 35px;
-  width: 250px;
+  border: 0;
 }
 
 .global-search-input:focus {
   outline: none;
 }
 
-.header-nav-container-actions-image {
+.header-nav-actions-image {
 }
-.header-hero-container {
+
+.img-hero-bottom {
+  width: 599px;
+  height: 394px;
+  position: absolute;
+  background-image: url("../image/bg_img_hero_bottom.svg");
+  background-position: top right;
+  background-size: cover;
+  top: 554px;
+  left: 0;
+}
+
+.header-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 167px;
-}
-
-.content-hero {
+  flex-direction: column;
   width: 489px;
-  height: 300px;
+  margin-top: 180px;
+  position: relative;
 }
 
-.header-title {
-  font-family: "Poppins";
+.header-content h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
   letter-spacing: 0%;
+  margin-bottom: 24px;
 }
 
-.header-title span {
-  font-family: "Poppins";
+.header-content h1 span {
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
@@ -157,40 +188,63 @@ body {
   color: #ff902b;
 }
 
-.header-subtitle {
-  font-weight: 400;
-  font-style: 18px;
-  line-height: 100%;
-  letter-spacing: 0%;
+.header-content p {
   color: #7e7d7a;
-  width: 393px;
-  height: 54px;
   margin-bottom: 32px;
 }
 
-.header-btn {
+.header-content-link {
   display: flex;
   align-items: center;
   gap: 26px;
 }
 
-.order-btn {
+.header-content-order-link {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-weight: 600px;
+  width: max-content;
+  font-weight: 600;
   font-size: 14px;
-  width: 170px;
-  height: 46px;
-  padding: 12px 32px;
-  border: 0;
-  border-radius: 33px;
-  background-color: #2f2105;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
   color: #ffffff;
+
+  border-radius: 33px;
+  padding-top: 12px;
+  padding-right: 32px;
+  padding-bottom: 12px;
+  padding-left: 32px;
+  gap: 10px;
+  background-color: #2f2105;
+  box-shadow: 0px 4px 32px 0px #dfc37c40;
 }
 
-.menu-btn {
+.header-content-order-link span:nth-child(2) img {
+  width: 12px;
+  height: 12px;
+}
+
+.header-content-order-link span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff902b;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.header-content-more-link {
+  display: inline-block;
   font-weight: 700;
-  font-style: 12px;
+  font-size: 12px;
+  text-align: center;
   color: #f4ae26;
+}
+
+.header-cofe-img {
+  position: absolute;
+  top: 158px;
+  right: 203px;
 }
