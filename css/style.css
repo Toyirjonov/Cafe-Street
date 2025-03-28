@@ -243,8 +243,8 @@ img {
   margin-bottom: 38px;
 }
 
-.orange-line {
-  border-bottom: 4px solid orange;
+.line {
+  border-bottom: 4px solid #ff902b;
 }
 
 /* .popular-now_box {} */
@@ -367,7 +367,7 @@ img {
   justify-content: space-between;
 }
 
-.servide-list-item {
+.servise-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,24 +391,24 @@ img {
   color: #000000;
 }
 
-/* ABOUT US */
-.about-us {
+/* ABOUT */
+.about {
   width: 100%;
   height: 484px;
-  background-image: url("../image/about-us-bg-image.png");
+  background-image: url("../img/about-bg-image.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: center;
   background-position: center;
   margin-bottom: 120px;
 }
 
-.about-us-container {
+.aboutcontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.about-us-image {
+.about-image {
   position: relative;
   bottom: 69px;
   margin-left: 107px;
@@ -418,12 +418,12 @@ img {
   border-radius: 12px;
 }
 
-.about-us-content {
+.about-content {
   width: 100%;
   max-width: 478px;
 }
 
-.about-us-title {
+.about-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
@@ -432,7 +432,7 @@ img {
   margin-bottom: 23px;
 }
 
-.about-us-subtitle {
+.about-subtitle {
   font-weight: 600;
   font-size: 24px;
   line-height: 100%;
@@ -441,12 +441,12 @@ img {
   margin-bottom: 15px;
 }
 
-.about-us-caption {
+.about-caption {
   color: #7e7d7a;
   margin-bottom: 31px;
 }
 
-.about-us-link {
+.about-link {
   border-radius: 33px;
   padding-top: 10px;
   padding-right: 24px;
@@ -454,17 +454,95 @@ img {
   padding-left: 24px;
   gap: 10px;
   background-color: #2f2105;
-
-  /* text */
   font-weight: 700;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #f4ae26;
-
-  &:hover {
-    opacity: 0.7;
-  }
 }
 
-/* MAIN END */
+.about-link:hover {
+  opacity: 0.7;
+}
+
+/* Special Menu */
+.special-menu {
+  margin-bottom: 120px;
+}
+
+.special-menu-container {
+  width: 1148;
+  height: 895;
+  top: 2519px;
+  left: 146px;
+}
+
+.special-menu-title {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 4%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.carts-list {
+  margin: 25px 18px;
+  background: #fff;
+  box-shadow: 0px 6px 16px 0px #00000029;
+}
+
+.carts {
+  position: relative;
+  width: 340px;
+  height: 385px;
+  background: white;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.cart-info {
+  position: relative;
+  margin: 25px 18px;
+}
+
+.cart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px;
+
+  /* text */
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 4%;
+  color: #2f2105;
+}
+
+.cart-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px;
+}
+
+.cart-subtitle p:first-child {
+  width: 161.45px;
+  height: 42px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #7e7d7a;
+}
